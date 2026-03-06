@@ -1,6 +1,4 @@
-* {
-    box-sizing: border-box;
-}
+
 
 h1, h2, h3, p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -59,10 +57,13 @@ nav a:hover {
 
 .content {
     display: inline-block;
-    width: 1000px;
-    margin-left: 20px;
-    margin-top: 20px;
+    width: 65%;
     vertical-align: top;
+    padding: 25px;
+    margin: 20px auto;
+    overflow: hidden;
+    padding: 20px;
+    
     
     
     background-color: #c5dff5; 
@@ -75,10 +76,9 @@ nav a:hover {
 
 .sidebar {
     display: inline-block;
-    width: 500px;
-    margin-left: 20px;
-    margin-top: 20px;
     vertical-align: top;
+    width: 30%; 
+    margin-left: 4%;
 
     
     background-color: #c1e1f7;      
@@ -129,4 +129,5 @@ footer {
     padding: 15px;
     margin-bottom: 15px;
 }
+
 
