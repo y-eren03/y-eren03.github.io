@@ -22,11 +22,68 @@
         <h2>Bana Ulaşın</h2>
         <p>Projelerim hakkında konuşmak veya iş birliği yapmak için mesaj atabilirsiniz:</p>
         <ul>
-            <li><strong>E-posta:</strong> <a href="mailto:yusufcelebil00@gmail.com">yusufcelebil00@gmail.com</a> </li>
-            <li><strong>Telefon:</strong> +90 545 261 74 31 </li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/y-eren03" target="_blank">github.com/y-eren03</a> </li>
-            <li><strong>Adres:</strong> Örnek Mah. İsfahan Sok. No:8 Daire:1 Kat:-1 Ataşehir / İstanbul </li>
+            <li><strong>E-posta:</strong> <a href="mailto:yusufcelebil00@gmail.com">yusufcelebil00@gmail.com</a></li>
+            <li><strong>Telefon:</strong> +90 545 261 74 31</li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/y-eren03" target="_blank">github.com/y-eren03</a></li>
+            <li><strong>Adres:</strong> Ataşehir / İstanbul</li>
         </ul>
-    </div>
+
+        <hr>
+
+        <div class="contact-container">
+            <h3>Detaylı İletişim Formu</h3>
+            <form action="#">
+                <label for="name">Ad Soyad:</label>
+                <input type="text" id="name" name="name" placeholder="İsim Girin" required>
+
+                <label for="email">E-posta Adresi:</label>
+                <input type="email" id="email" name="email" placeholder="ornek@mail.com" required>
+
+                <label for="password">Başvuru Takip Şifresi:</label>
+                <input type="password" id="password" name="password" placeholder="Şifrenizi girin">
+
+                <label>İletişim Tercihi:</label>
+                <div class="radio-group">
+                    <input type="radio" id="pref-email" name="preference" value="email">
+                    <label for="pref-email" class="inline-label">Bana e-posta ile ulaşın</label><br>
+                    <input type="radio" id="pref-phone" name="preference" value="phone">
+                    <label for="pref-phone" class="inline-label">Bana telefonla ulaşın</label>
+                </div>
+
+                <label>İlgi Alanları / Yetenekler:</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="ai" name="skills" value="ai">
+                    <label for="ai" class="inline-label">Yapay Zeka</label><br>
+                    <input type="checkbox" id="java" name="skills" value="java">
+                    <label for="java" class="inline-label">Java</label><br>
+                    <input type="checkbox" id="python" name="skills" value="python">
+                    <label for="python" class="inline-label">Python</label>
+                </div>
+
+                <label for="subject">Konu:</label>
+                <select id="subject" name="subject">
+                    <option value="">Lütfen bir konu seçin...</option>
+                    <option value="job">İş Teklifi</option>
+                    <option value="question">Soru</option>
+                    <option value="feedback">Geri Bildirim</option>
+                </select>
+
+                <label for="file">Özgeçmiş (CV) veya Fotoğraf Yükle:</label>
+                <input type="file" id="file" name="file">
+
+                <label for="message">Mesajınız:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Detaylı mesajınızı buraya yazabilirsiniz..."></textarea>
+
+                <div class="button-group">
+                    <button type="submit" class="btn-submit">Gönder</button>
+                    <button type="reset" class="btn-reset">Temizle</button>
+                </div>
+            </form>
+        </div>
+        </div>
+
+    <footer>
+        <p>&copy; 2026 Yusuf Eren Çelebi</p>
+    </footer>
 </body>
 </html>
