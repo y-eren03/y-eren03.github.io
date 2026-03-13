@@ -49,7 +49,7 @@ nav a:hover {
     width: 85%;
     margin: 20px auto;
     overflow: hidden;
-    padding: 20px;
+    padding: 10px;
     background: #fff;
     min-height: 450px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -57,10 +57,9 @@ nav a:hover {
 
 .content {
     display: inline-block;
-    width: 65%;
+    width: 55%;
     vertical-align: top;
-    padding: 25px;
-    margin: 20px auto;
+    margin: 25px;
     overflow: hidden;
     padding: 20px;
     
@@ -69,7 +68,6 @@ nav a:hover {
     background-color: #c5dff5; 
     border: 2px solid #3498db;      
     border-radius: 12px;
-    padding: 25px;
     box-shadow: 0 8px 25px rgba(52, 152, 219, 0.1);
     color: #1a252f;                 
 }
@@ -78,7 +76,8 @@ nav a:hover {
     display: inline-block;
     vertical-align: top;
     width: 30%; 
-    margin-left: 4%;
+    margin-left: 2%;
+    margin: 25px auto;
 
     
     background-color: #c1e1f7;      
@@ -131,3 +130,80 @@ footer {
 }
 
 
+
+.contact-container {
+    width: 600px; 
+    margin: 40px auto; 
+    padding: 30px; 
+    border: 1px solid white; 
+    border-radius: 10px; 
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.contact-container h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+
+.contact-container textarea {
+    width: 100%;
+    padding: 10px; 
+    margin-bottom: 20px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+.contact-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+.contact-container .inline-label {
+    display: inline;
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+.radio-group, .checkbox-group {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+}
+
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-submit {
+    flex: 1;
+    background-color: blue;
+    color: white;
+    padding: 12px 20px; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-reset {
+    flex: 1;
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-submit:hover { background-color: blue; }
+.btn-reset:hover { background-color: red; }
