@@ -136,7 +136,7 @@ footer {
 .contact-container select,
 .contact-container {
     width: 600px; 
-    margin: 20px auto; 
+    margin: 10px auto; 
     padding: 10px; 
     border: 1px solid white; 
     border-radius: 10px; 
@@ -210,3 +210,4 @@ footer {
 
 .btn-submit:hover { background-color: blue; }
 .btn-reset:hover { background-color: red; }
+
