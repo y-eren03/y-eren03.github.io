@@ -1,3 +1,5 @@
+
+
 h1, h2, h3, p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 15px;
@@ -21,13 +23,11 @@ header {
 nav ul {
     padding: 10px 0;
     list-style: none;
-    background: #34495e;
-    text-align: center;
-    margin: 0;
+    background: #34495e; 
 }
 
 nav ul li {
-    display: inline-block;
+    display: inline-block; 
     margin: 0 15px;
 }
 
@@ -53,43 +53,46 @@ nav a:hover {
     background: #fff;
     min-height: 450px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    box-sizing: border-box;
-    display: flex;
-    align-items: flex-start;
-    gap: 0;
 }
 
 .content {
-    width: 62%;
+    display: inline-block;
+    width: 55%;
+    vertical-align: top;
     margin: 25px;
+    overflow: hidden;
     padding: 20px;
-    background-color: #c5dff5;
-    border: 2px solid #3498db;
+    
+    
+    
+    background-color: #c5dff5; 
+    border: 2px solid #3498db;      
     border-radius: 12px;
     box-shadow: 0 8px 25px rgba(52, 152, 219, 0.1);
-    color: #1a252f;
-    box-sizing: border-box;
-    flex-shrink: 0;
+    color: #1a252f;                 
 }
 
 .sidebar {
-    width: 28%;
-    margin: 25px 25px 25px 0;
-    padding: 20px;
-    background-color: #c1e1f7;
-    border: 2px solid #2980b9;
+    display: inline-block;
+    vertical-align: top;
+    width: 30%; 
+    margin-left: 2%;
+    margin: 25px auto;
+
+    
+    background-color: #c1e1f7;      
+    border: 2px solid #2980b9;      
     border-radius: 12px;
+    padding: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    color: #2c3e50;
-    box-sizing: border-box;
-    flex-shrink: 0;
+    color: #2c3e50;                
 }
 
 .content p {
-    font-size: 17px;
-    color: #2c3e50;
-    line-height: 1.8;
-    text-align: justify;
+    font-size: 17px;        
+    color: #2c3e50;        
+    line-height: 1.8;      
+    text-align: justify;   
 }
 
 .sidebar p {
@@ -97,6 +100,7 @@ nav a:hover {
     color: #7f8c8d;
     line-height: 1.4;
 }
+
 
 .btn {
     display: inline-block;
@@ -117,6 +121,7 @@ footer {
     clear: both;
 }
 
+
 .project-card {
     border-left: 5px solid #e67e22;
     background: #eee;
@@ -124,15 +129,19 @@ footer {
     margin-bottom: 15px;
 }
 
+
+.contact-container input[type="text"],
+.contact-container input[type="email"],
+.contact-container input[type="password"],
+.contact-container select,
 .contact-container {
-    width: 600px;
-    margin: 40px auto;
-    padding: 30px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
+    width: 600px; 
+    margin: 40px auto; 
+    padding: 30px; 
+    border: 1px solid white; 
+    border-radius: 10px; 
     background-color: white;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    box-sizing: border-box;
 }
 
 .contact-container h3 {
@@ -140,25 +149,23 @@ footer {
     margin-top: 0;
 }
 
-.contact-container input[type="text"],
-.contact-container input[type="email"],
-.contact-container input[type="password"],
+
 .contact-container textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 10px; 
+    margin-bottom: 20px; 
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 14px;
 }
+
 
 .contact-container label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
 }
+
 
 .contact-container .inline-label {
     display: inline;
@@ -173,6 +180,7 @@ footer {
     border-radius: 5px;
 }
 
+
 .button-group {
     display: flex;
     gap: 10px;
@@ -180,27 +188,25 @@ footer {
 
 .btn-submit {
     flex: 1;
-    background-color: #2980b9;
+    background-color: blue;
     color: white;
-    padding: 12px 20px;
-    border: none;
+    padding: 12px 20px; 
+    border: none; 
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    transition: background-color 0.3s;
 }
 
 .btn-reset {
     flex: 1;
-    background-color: #e74c3c;
+    background-color: red;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    transition: background-color 0.3s;
 }
 
-.btn-submit:hover { background-color: #1a6fa3; }
-.btn-reset:hover { background-color: #c0392b; }
+.btn-submit:hover { background-color: blue; }
+.btn-reset:hover { background-color: red; }
