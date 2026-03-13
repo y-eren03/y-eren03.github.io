@@ -59,9 +59,9 @@ nav a:hover {
     display: inline-block;
     width: 55%;
     vertical-align: top;
-    margin: 25px auto;
+    margin: 25px;
     overflow: hidden;
-    padding: 20px auto;
+    padding: 20px;
     
     
     
@@ -207,4 +207,3 @@ footer {
 
 .btn-submit:hover { background-color: blue; }
 .btn-reset:hover { background-color: red; }
-
