@@ -341,3 +341,214 @@ nav a:hover {
 
 .btn-submit:hover { background-color: blue; }
 .btn-reset:hover { background-color: red; }
+
+
+
+.position-lab-body {
+    min-height: 120vh; 
+    background: #f0f4f8;
+}
+
+.lab-main-wrapper {
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.fixed-status-bar {
+    position: fixed;
+    top: 12vh;
+    left: 20px;
+    background: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    z-index: 500;
+    font-size: 14px;
+    cursor: help; 
+}
+
+.profile-summary-card {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+
+.abs-badge {
+    position: absolute;
+    background: #3498db;
+    color: white;
+    padding: 5px 12px;
+    font-size: 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer; 
+    transition: transform 0.3s ease; 
+}
+
+.abs-badge:hover {
+    transform: translateY(-5px); 
+}
+
+.badge-top { top: -15px; right: 20px; background: #27ae60; }
+.badge-left { top: -15px; left: 20px; background: #e67e22; }
+.badge-bottom { bottom: 15px; right: 15px; background: #8e44ad; }
+
+.floating-tech-box {
+    position: absolute;
+    bottom: -30px;
+    left: 20px;
+    background: #fff;
+    border: 2px solid #3498db;
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 10; 
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2);
+    cursor: crosshair;
+    animation: bounce 2s infinite;
+}
+
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+
+
+/*HAFTA 5: POSITION LAB */
+
+.position-lab-body {
+    background-color: #f0f2f5;
+    min-height: 150vh; 
+}
+
+.lab-container {
+    padding: 50px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.fixed-helper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #e67e22;
+    color: white;
+    padding: 15px;
+    border-radius: 50px;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    cursor: help; 
+    transition: transform 0.3s ease; 
+}
+
+.fixed-helper:hover {
+    transform: scale(1.1);
+}
+
+
+.announcement-card {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    background: #dcd6f7;
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+    animation: slideUpFade 1s ease-out forwards;
+}
+
+
+.badge-top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #fef08a;
+    padding: 5px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+    z-index: 20;
+}
+
+.badge-top-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #bbf7d0;
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+
+.badge-bottom-right {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: #fecaca;
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+
+.location-box {
+    position: absolute;
+    bottom: 80px;
+    right: 50px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    z-index: 10; 
+    cursor: crosshair;
+    transition: all 0.4s ease; 
+}
+
+.location-box:hover {
+    background: #2c3e50;
+    color: white;
+    bottom: 90px;
+}
+
+.card-content h3 {
+    font-size: 2rem;
+    margin-top: 40px;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+@keyframes slideUpFade {
+    from {
+        opacity: 0; 
+        transform: translateY(50px); 
+    }
+    to {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+
