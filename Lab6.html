@@ -12,7 +12,7 @@
     <h2>Birim Dönüştürücü</h2>
     
     <label>Değer Giriniz</label>
-    <input type="number" id="birimDeger" value="50">
+    <input type="text" id="birimDeger" value="50">
     
     <label>Dönüşüm Tipi:</label>
     <select id="donusumTipi">
@@ -30,8 +30,8 @@
     
     <label>Öğrenci Bilgileri</label>
     <input type="text" id="adSoyad" placeholder="Ad Soyad">
-    <input type="number" id="vize" placeholder="Vize Notu (%40)">
-    <input type="number" id="final" placeholder="Final Notu (%60)">
+    <input type="text" id="vize" placeholder="Vize Notu (%40)">
+    <input type="text" id="final" placeholder="Final Notu (%60)">
     
     <button class="button-lab6" onclick="hesaplaNot()">Notu Hesapla</button>
 
@@ -72,7 +72,7 @@
             alert("Lütfen tüm alanları doldurun.");
             return;
         }
-         if(vize < 0 || vize > 100 || final < 0 || final > 100) {
+        if(vize < 0 || vize > 100 || final < 0 || final > 100) {
             alert("Notlar 0 ile 100 arasında olmalıdır.");
             return;
         }
@@ -82,7 +82,7 @@
         let harf = "FF";
 
         if(ortalama >= 90) harf = "AA";
-        else if(ortalama >= 80) harf = "BA";
+        else if(ortalama >= 80) harf = "BA";    
         else if(ortalama >= 70) harf = "BB";
         else if(ortalama >= 60) harf = "CB";
         else if(ortalama >= 50) harf = "CC";
