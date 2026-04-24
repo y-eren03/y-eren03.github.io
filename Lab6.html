@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çok Amaçlı Hesaplama Paneli</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="lab6-body">
+
+<div class="card-lab6">
+    <h2>Birim Dönüştürücü</h2>
+    
+    <label>Değer Giriniz</label>
+    <input type="text" id="birimDeger" value="50">
+    
+    <label>Dönüşüm Tipi:</label>
+    <select id="donusumTipi">
+        <option value="m-km">Metre -> Kilometre</option>
+        <option value="c-f">Celsius -> Fahrenheit</option>
+        <option value="kg-g">Kilogram -> Gram</option>
+    </select>
+
+    <button class="button-lab6" onclick="donustur()">Hesapla</button>
+    <div class="result-display-lab6" id="birimSonuc">Sonuç: -</div>
+</div>
+
+<div class="card-lab6">
+    <h2>Öğrenci Not Hesaplama</h2>
+    
+    <label>Öğrenci Bilgileri</label>
+    <input type="text" id="adSoyad" placeholder="Ad Soyad">
+    <input type="text" id="vize" placeholder="Vize Notu (%40)">
+    <input type="text" id="final" placeholder="Final Notu (%60)">
+    
+    <button class="button-lab6" onclick="hesaplaNot()">Notu Hesapla</button>
+
+    <div id="sonuc" class="result-box-lab6" style="display:none;">
+        <h3 id="resAd"></h3>
+        <p id="resOrt"></p>
+        <p id="resHarf"></p>
+        <p id="resDurum"></p>
+    </div>
+</div>
+
+<script>
+    // --- Birim Dönüştürücü Fonksiyonu ---
+    function donustur() {
+        let deger = parseFloat(document.getElementById("birimDeger").value);
+        let tip = document.getElementById("donusumTipi").value;
+        let sonuc = 0;
+
+        if (isNaN(deger)) {
+            alert("Lütfen geçerli bir sayı girin.");
+            return;
+        }
+
+        if(tip === "m-km") sonuc = deger / 1000;
+        else if(tip === "c-f") sonuc = (deger * 9/5) + 32;
+        else if(tip === "kg-g") sonuc = deger * 1000;
+
+        document.getElementById("birimSonuc").innerText = "Sonuç: " + sonuc.toLocaleString('tr-TR');
+    }
+
+    // --- Not Hesaplama Fonksiyonu ---
+    function hesaplaNot() {
+        let ad = document.getElementById("adSoyad").value;
+        let vize = parseFloat(document.getElementById("vize").value);
+        let final = parseFloat(document.getElementById("final").value);
+        
+        if (ad === "" || isNaN(vize) || isNaN(final)) {
+            alert("Lütfen tüm alanları doldurun.");
+            return;
+        }
+        if(vize < 0 || vize > 100 || final < 0 || final > 100) {
+            alert("Notlar 0 ile 100 arasında olmalıdır.");
+            return;
+        }
+        
+        let ortalama = (vize * 0.4) + (final * 0.6);
+        let durum = ortalama >= 50 ? " Geçti" : " Kaldı";
+        let harf = "FF";
+
+        if(ortalama >= 90) harf = "AA";
+        else if(ortalama >= 80) harf = "BA";    
+        else if(ortalama >= 70) harf = "BB";
+        else if(ortalama >= 60) harf = "CB";
+        else if(ortalama >= 50) harf = "CC";
+
+        document.getElementById("resAd").innerText = ad;
+        document.getElementById("resOrt").innerText = "Ortalama: " + ortalama.toFixed(2);
+        document.getElementById("resHarf").innerText = "Harf Notu: " + harf;
+        document.getElementById("resDurum").innerText = "Durum: " + durum;
+        document.getElementById("sonuc").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
