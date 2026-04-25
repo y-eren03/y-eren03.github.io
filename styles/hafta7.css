@@ -1,6 +1,7 @@
+/* importantlar sayeside dark mod sorunsuz çalışıyor , yoksa dark modda bazı elementler beyaz kalıyordu. */
 
 body {
-    transition: background-color 0.4s ease, color 0.4s ease; 
+    transition: background-color 0.4s ease, color 0.4s ease;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -8,8 +9,8 @@ body {
 
 
 body.bg-dark {
-    background-color: #121212;
-    color: #e0e0e0 ;
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
 }
 
 body.bg-dark .card {
@@ -19,8 +20,8 @@ body.bg-dark .card {
 }
 
 body.bg-dark #kayitFormu {
-    background-color: #1e1e1e ;
-    border-color: #444 ;
+    background-color: #1e1e1e !important;
+    border-color: #444 !important;
     color: white;
 }
 
@@ -31,9 +32,8 @@ body.bg-dark .form-select {
     color: white;
 }
 
-
 header.bg-primary {
-    background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+    background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%) !important;
 }
 
 
@@ -42,7 +42,6 @@ header.bg-primary {
     min-height: 100px;
 }
 
-
 .card {
     transition: transform 0.3s ease;
 }
@@ -50,3 +49,4 @@ header.bg-primary {
 .card:hover {
     transform: translateY(-5px);
 }
+
